@@ -75,7 +75,7 @@ export function addMemo(text){
 };
 
 
-export function delteMemo(num){
+export function deleteMemo(num){
 	return {
 		type: 'DELETE',
 		index: num

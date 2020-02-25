@@ -7,7 +7,7 @@ class Memo extends Component {
 		let data;
 		let n = 0;
 		switch (this.props.mode){
-			case: 'default':
+			case 'default':
 				data = this.props.data.map((value) => (
 					<Item key={value.message} value={value} index={n++} />
 				));
