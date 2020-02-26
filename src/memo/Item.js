@@ -29,8 +29,6 @@ class Item extends Component {
 	};
 
 	render(){
-		let d = this.props.value.created;
-		let f = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 		return (
 			<tr>
 				<th style={this.th}>
@@ -39,8 +37,8 @@ class Item extends Component {
 				<td style={this.td}>
 					{this.props.value.message}
 				</td>
-				<td style={this.data}>
-					{f}
+				<td style={this.date}>
+					{this.props.value.created}
 				</td>
 			</tr>
 		);

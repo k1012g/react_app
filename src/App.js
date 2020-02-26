@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 import Memo from './memo/Memo';
 import AddForm from './memo/AddForm';
 import FindForm from './memo/FindForm';
 import DelForm from './memo/DelForm';
+import PersistForm from './memo/PersistForm';
 
 class App extends Component {
   td = {
@@ -25,6 +26,7 @@ class App extends Component {
             <tr>
               <td style={this.td}><FindForm /></td>
               <td style={this.td}><DelForm /></td>
+              <td style={this.td}><PersistForm /></td>
             </tr>
           </tbody>
         </table>
@@ -35,4 +37,4 @@ class App extends Component {
 };
 
 
-export default App;
+export default connect()(App);
